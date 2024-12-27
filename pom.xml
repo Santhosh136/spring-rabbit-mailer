@@ -38,6 +38,12 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
+		<dependency>
+			<groupId>org.simplejavamail</groupId>
+			<artifactId>simple-java-mail</artifactId>
+			<version>8.12.4</version>
+		</dependency>
+
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -63,26 +69,6 @@
 
 	<build>
 		<plugins>
-			<plugin>
-				<groupId>gg.jte</groupId>
-				<artifactId>jte-maven-plugin</artifactId>
-				<version>3.1.12</version>
-				<executions>
-					<execution>
-						<id>jte-generate</id>
-						<phase>generate-sources</phase>
-						<goals>
-							<goal>generate</goal>
-						</goals>
-						<configuration>
-							<sourceDirectory>${project.basedir}/src/main/jte</sourceDirectory>
-							<contentType>Html</contentType>
-							<binaryStaticContent>true</binaryStaticContent>
-							<targetResourceDirectory>${project.build.outputDirectory}</targetResourceDirectory>
-						</configuration>
-					</execution>
-				</executions>
-			</plugin>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
